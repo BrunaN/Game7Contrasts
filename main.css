@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Fixedsys Excelsior 3.01';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Fixedsys Excelsior 3.01'), url('FSEX300.woff') format('woff');
+}
+
+.container{
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+    height: 100vh;
+    width: 100wh;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    padding: 40px 200px;
+    height: 120px;
+    box-sizing: border-box;
+}
+
+.brand{
+    font-family: 'Fixedsys Excelsior 3.01';
+    font-size:42px;
+    position: relative;
+}
+
+.blue, .shadow, .pink{
+    position: absolute;
+}
+
+.blue{
+    z-index: 2;
+    top: 4px;
+    color: rgb(0, 152, 255);
+}
+
+.shadow{
+    z-index: 1;
+    left: 3px;
+    top: 2px;
+    color: rgb(133, 28, 255);
+}
+
+.pink{
+    z-index: 0;
+    left: 5px;
+    color:rgb(255, 31, 93);
+}
+
+.content{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.content h3{
+    font-family: 'Fixedsys Excelsior 3.01';
+    font-size: 24px;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 35px;
+}
+
+.content .images{
+    display: flex;
+    justify-content: center;
+}
+
+.content .images img{
+    height: 250px;
+    margin: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+footer .progress{
+    width: 33%;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    font-family: 'Fixedsys Excelsior 3.01';
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+footer .progress .number{
+    
+}
