@@ -79,6 +79,51 @@ header{
     cursor: pointer;
 }
 
+.content .response{
+    display: flex;
+    justify-content: center;
+}
+
+.content .response .response-status{
+    position: relative;
+    width: 826px;
+}
+
+.content .response .response-status img{
+    width: 450px;
+    border-radius: 20px;
+}
+
+.content .response .response-status .status{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 210px;
+    bottom: -24px;
+    right: 0;
+}
+
+.content .response .response-status .status .icon{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-right: 10px;
+    background-color: rgb(0, 152, 255);
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.content .response .response-status .status span{
+    font-size: 18px;
+    width: 152px;
+    font-family: 'Fixedsys Excelsior 3.01';
+    text-align: left;
+    line-height: 1.4rem;
+}
+
 footer{
     position: fixed;
     width: 100%;
