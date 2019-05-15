@@ -80,8 +80,10 @@ header{
 }
 
 .content .response{
-    display: flex;
+    display: none;
+    /* display: flex; */
     justify-content: center;
+    padding-top: 5px;
 }
 
 .content .response .response-status{
