@@ -121,18 +121,20 @@ next.addEventListener('click', function(){
     let position = (parseInt(a)+1);
     let value = aux.split("_")[1];
 
-    let src1 = "img/" + position + "_r.jpg"
-    let src2 = "img/" + position + "_w.jpg"
+    let y = ["r","w"];
+    let x = (y[Math.random() < 0.5 ? 0 : 1])
 
-    console.log(src1, src2)
+    let src1 = "img/" + position + "_" + x +".jpg"
+    let src2 = "img/" + position + "_";
 
-    if(value == "r"){
-        image1.setAttribute('src', src2);
-        image2.setAttribute('src', src1);
+    if(x == y[1]){
+        src2 += y[0] +".jpg"
     }else{
-        image1.setAttribute('src', src2);
-        image2.setAttribute('src', src1);
+        src2 += y[1] +".jpg"
     }
+
+    image1.setAttribute('src', src2);
+    image2.setAttribute('src', src1);
 
     select.style.display='block';
     response.style.display='none';
