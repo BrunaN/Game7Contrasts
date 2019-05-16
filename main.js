@@ -38,7 +38,7 @@ image1.addEventListener("click", function(){
         responseText = responses[position - 1]
         messageResponse.innerHTML = responseText.list[0];
         iconResponse.style.backgroundColor = "green";
-        i.setAttribute("class", "fas fa-check")
+        icon.classList.add("fa-check")
     }
     console.log(value)
     select.style.display='none';
