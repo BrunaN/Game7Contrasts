@@ -122,8 +122,8 @@ image2.addEventListener("click", function(){
     imageResponse.setAttribute('src', src);
 });
 
-let width = 14.286;
-let count = 1;
+let width = 0;
+let count = 0;
 
 next.addEventListener('click', function(){
     let srcResponse = document.getElementById("response").getAttribute("src");
@@ -156,11 +156,15 @@ next.addEventListener('click', function(){
     width += 14.286;
     count++;
 
-    if(count>1){
+    if(count > 0 && count <= 7){
         textProgress.innerHTML = count + " de 7 contrastes";
     }
 
-    if(width > 14.286){
+    if(count == 7){
+
+    }
+
+    if(width >= 14.286 && width < 105){
         progress.style.width = width + '%';
     }
 
