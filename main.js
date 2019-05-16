@@ -8,8 +8,39 @@ let response = document.getElementsByClassName("response")[0];
 
 let imageResponse = document.getElementById("response");
 
+let messageResponse = document.getElementById("message");
+let iconResponse = document.getElementsByClassName("icon")[0];
+let icon = document.getElementsByTagName("i")[0];
+
+let responses = [
+    { 
+        'value': '1',
+        'list': [
+            "A obra representa um contraste de matiz",
+            "A obra não representa um contraste de matiz"
+        ]
+    },
+    { 
+        'value': '2'
+        [
+            "A obra representa um contraste claro-escuro",
+            "A obra não representa um contraste claro-escuro"
+        ]
+    }
+]
+
 image1.addEventListener("click", function(){
     let src = document.getElementById("image1").getAttribute("src");
+    let aux = src.split("/")[1].substring(0, 3);
+    let position = aux.split("_")[0];
+    let value = aux.split("_")[1];
+    if(value == "r"){
+        responseText = responses[position - 1]
+        messageResponse.innerHTML = responseText.list[0];
+        iconResponse.style.backgroundColor = "green";
+        i.setAttribute("class", "fas fa-check")
+    }
+    console.log(value)
     select.style.display='none';
     response.style.display='flex';
     imageResponse.setAttribute('src', src);
@@ -17,6 +48,9 @@ image1.addEventListener("click", function(){
 
 image2.addEventListener("click", function(){
     let src = document.getElementById("image2").getAttribute("src");
+    let aux = src.split("/")[1]
+    let value = aux.substring(0, 3);
+    console.log(value)
     select.style.display='none';
     response.style.display='flex';
     imageResponse.setAttribute('src', src);
