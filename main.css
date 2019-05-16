@@ -182,3 +182,7 @@ footer .progress .number{
     opacity: 0.5;
     transition: all 0.5s ease 0s;
 }
+
+#text-progress{
+    z-index: 100;
+}

@@ -15,6 +15,8 @@ let iconCheck =  document.getElementsByClassName("fa-check")[0];
 let iconError =  document.getElementsByClassName("fa-times")[0];
 
 let progress = document.getElementsByClassName("number")[0];
+let textProgress = document.getElementById("text-progress");
+
 
 let responses = [
     { 
@@ -121,6 +123,7 @@ image2.addEventListener("click", function(){
 });
 
 let width = 14.286;
+let count = 1;
 
 next.addEventListener('click', function(){
     let srcResponse = document.getElementById("response").getAttribute("src");
@@ -151,6 +154,11 @@ next.addEventListener('click', function(){
     image1.setAttribute('src', src2);
 
     width += 14.286;
+    count++;
+
+    if(count>1){
+        textProgress.innerHTML = count + " de 7 contrastes";
+    }
 
     if(width > 14.286){
         progress.style.width = width + '%';
@@ -160,7 +168,6 @@ next.addEventListener('click', function(){
         progress.style.borderTopRightRadius = '20px';
         progress.style.borderBottomRightRadius = '20px';
     }
-    console.log(width);
 
     question.innerHTML = "Selecione a imagem que melhor representa o contraste " + types[a];
 })
