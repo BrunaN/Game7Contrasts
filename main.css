@@ -184,5 +184,6 @@ footer .progress .number{
 }
 
 #text-progress{
+    display: block;
     z-index: 100;
 }
