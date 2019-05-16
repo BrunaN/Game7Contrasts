@@ -68,7 +68,7 @@ header{
 }
 
 .content .select{
-    /* display: none; */
+    display: block;
 }
 
 .content .images{
