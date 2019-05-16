@@ -93,9 +93,9 @@ header{
 }
 
 .content .response button{
-    background-color:rgb(255, 31, 93);
+    border: solid 2px rgb(255, 31, 93);
+    background-color: transparent;
     padding: 15px 20px;
-    border: none;
     color: #fff;
     font-family: 'Fixedsys Excelsior 3.01';
     margin: 30px;
