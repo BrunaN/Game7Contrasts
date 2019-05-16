@@ -25,8 +25,7 @@ let responses = [
             "A obra representa um contraste de matiz",
             "A obra não representa um contraste de matiz"
         ]
-    },
-    { 
+    }, { 
         'value': '2',
         'list': [
             "A obra representa um contraste claro-escuro",
