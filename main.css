@@ -68,7 +68,7 @@ header{
 }
 
 .content .select{
-    display: none;
+    /* display: none; */
 }
 
 .content .images{
@@ -84,8 +84,8 @@ header{
 }
 
 .content .response{
-    /* display: none; */
-    display: flex;
+    display: none;
+    /* display: flex; */
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -93,12 +93,22 @@ header{
 }
 
 .content .response button{
-    
+    background-color:rgb(255, 31, 93);
+    padding: 15px 20px;
+    border: none;
+    color: #fff;
+    font-family: 'Fixedsys Excelsior 3.01';
+    margin: 30px;
+    font-size: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .content .response .response-status{
+    margin-bottom: 10px;
     position: relative;
-    width: 826px;
+    width: 826px; 
 }
 
 .content .response .response-status img{
