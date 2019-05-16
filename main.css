@@ -67,6 +67,10 @@ header{
     padding-bottom: 35px;
 }
 
+.content .select{
+    display: none;
+}
+
 .content .images{
     display: flex;
     justify-content: center;
@@ -80,10 +84,16 @@ header{
 }
 
 .content .response{
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 5px;
+}
+
+.content .response button{
+    
 }
 
 .content .response .response-status{
