@@ -120,6 +120,8 @@ image2.addEventListener("click", function(){
     imageResponse.setAttribute('src', src);
 });
 
+let width = 14.286;
+
 next.addEventListener('click', function(){
     let srcResponse = document.getElementById("response").getAttribute("src");
 
@@ -148,10 +150,17 @@ next.addEventListener('click', function(){
 
     image1.setAttribute('src', src2);
 
-    let width = 14.2;
+    width += 14.286;
 
-    progress.style.width = width + 14.2 + '%';
-    width =+ 14.2;
+    if(width > 14.286){
+        progress.style.width = width + '%';
+    }
+
+    if(width > 100){
+        progress.style.borderTopRightRadius = '20px';
+        progress.style.borderBottomRightRadius = '20px';
+    }
+    console.log(width);
 
     question.innerHTML = "Selecione a imagem que melhor representa o contraste " + types[a];
 })
