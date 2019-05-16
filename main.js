@@ -11,7 +11,10 @@ let imageResponse = document.getElementById("response");
 
 let messageResponse = document.getElementById("message");
 let iconResponse = document.getElementsByClassName("icon")[0];
-let icon = document.getElementsByTagName("i")[0];
+let iconCheck =  document.getElementsByClassName("fa-check")[0];
+let iconError =  document.getElementsByClassName("fa-times")[0];
+
+let progress = document.getElementsByClassName("number")[0];
 
 let responses = [
     { 
@@ -80,11 +83,13 @@ image1.addEventListener("click", function(){
     if(value == "r"){
         messageResponse.innerHTML = responseText.list[0];
         iconResponse.style.backgroundColor = "green";
-        icon.classList.add("fa-check")
+        iconCheck.style.display = "block";
+        iconError.style.display = "none";
     }else{
         messageResponse.innerHTML = responseText.list[1];
         iconResponse.style.backgroundColor = "red";
-        icon.classList.add("fa-times");
+        iconCheck.style.display = "none";
+        iconError.style.display = "block";
     }
 
     select.style.display='none';
@@ -102,11 +107,13 @@ image2.addEventListener("click", function(){
     if(value == "r"){
         messageResponse.innerHTML = responseText.list[0];
         iconResponse.style.backgroundColor = "green";
-        icon.classList.add("fa-check")
+        iconCheck.style.display = "block";
+        iconError.style.display = "none";
     }else{
         messageResponse.innerHTML = responseText.list[1];
         iconResponse.style.backgroundColor = "red";
-        icon.classList.add("fa-times");
+        iconCheck.style.display = "none";
+        iconError.style.display = "block";
     }
     select.style.display='none';
     response.style.display='flex';
@@ -140,6 +147,11 @@ next.addEventListener('click', function(){
     response.style.display='none';
 
     image1.setAttribute('src', src2);
+
+    let width = 14.2;
+
+    progress.style.width = width + 14.2 + '%';
+    width =+ 14.2;
 
     question.innerHTML = "Selecione a imagem que melhor representa o contraste " + types[a];
 })
