@@ -1,7 +1,7 @@
 let image1 = document.getElementById("image1");
 let image2 = document.getElementById("image2");
 
-let next = document.getElementsByTagName("button")[0];
+let next = document.getElementById("next");
 let question = document.getElementsByClassName("type")[0];
 
 let select = document.getElementsByClassName("select")[0];
@@ -23,6 +23,8 @@ let textProgress = document.getElementById("text-progress");
 let finish = document.getElementsByClassName("finish")[0];
 let spanRight = document.getElementById("right");
 let spanWrong = document.getElementById("wrong");
+
+let learn = document.getElementsByClassName("learn")[0];
 
 let responses = [
     { 
@@ -84,6 +86,8 @@ let countRight = 0;
 let countWrong = 0;
 
 image1.addEventListener("click", function(){
+    learn.style.display = 'none';
+
     let src = document.getElementById("image1").getAttribute("src");
     let aux = src.split("/")[1].substring(0, 3);
     let position = aux.split("_")[0];
@@ -110,6 +114,8 @@ image1.addEventListener("click", function(){
 });
 
 image2.addEventListener("click", function(){
+    learn.style.display = 'none';
+
     let src = document.getElementById("image2").getAttribute("src");
     let aux = src.split("/")[1].substring(0, 3);
     let position = aux.split("_")[0];
