@@ -17,6 +17,9 @@ let iconError =  document.getElementsByClassName("fa-times")[0];
 let progress = document.getElementsByClassName("number")[0];
 let textProgress = document.getElementById("text-progress");
 
+let finish = document.getElementsByClassName("finish")[0];
+let spanRight = document.getElementById("right");
+let spanWrong = document.getElementById("wrong");
 
 let responses = [
     { 
@@ -74,6 +77,9 @@ let types = [
     "de extensão"
 ]
 
+let countRight = 0;
+let countWrong = 0;
+
 image1.addEventListener("click", function(){
     let src = document.getElementById("image1").getAttribute("src");
     let aux = src.split("/")[1].substring(0, 3);
@@ -86,11 +92,13 @@ image1.addEventListener("click", function(){
         iconResponse.style.backgroundColor = "green";
         iconCheck.style.display = "block";
         iconError.style.display = "none";
+        countRight++;
     }else{
         messageResponse.innerHTML = responseText.list[1];
         iconResponse.style.backgroundColor = "red";
         iconCheck.style.display = "none";
         iconError.style.display = "block";
+        countWrong++;
     }
 
     select.style.display='none';
@@ -110,11 +118,13 @@ image2.addEventListener("click", function(){
         iconResponse.style.backgroundColor = "green";
         iconCheck.style.display = "block";
         iconError.style.display = "none";
+        countRight++;
     }else{
         messageResponse.innerHTML = responseText.list[1];
         iconResponse.style.backgroundColor = "red";
         iconCheck.style.display = "none";
         iconError.style.display = "block";
+        countWrong++;
     }
     select.style.display='none';
     response.style.display='flex';
@@ -160,7 +170,11 @@ next.addEventListener('click', function(){
     }
 
     if(count == 7){
-
+        spanRight.innerHTML = countRight;
+        spanWrong.innerHTML = countWrong;
+        finish.style.display = 'block';
+        select.style.display='none';
+        response.style.display='none';
     }
 
     if(width >= 14.286 && width < 105){

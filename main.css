@@ -146,6 +146,38 @@ header{
     line-height: 1.4rem;
 }
 
+.finish{
+    font-family: 'Fixedsys Excelsior 3.01';
+    display: none;
+}
+
+.finish h2{
+    font-size: 50px;
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+.finish h3 {
+    font-size: 30px;
+    color: rgb(133, 28, 255);
+}
+
+.finish p{
+    font-size: 30px;
+}
+
+.finish span{
+    font-size: 65px;
+}
+
+#right{
+    color: green;
+}
+
+#wrong{
+    color: red;
+}
+
 footer{
     position: fixed;
     width: 100%;
