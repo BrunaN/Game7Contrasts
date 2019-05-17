@@ -28,44 +28,44 @@ let responses = [
     { 
         'value': '1',
         'list': [
-            "A obra representa um contraste de matiz",
-            "A obra não representa um contraste de matiz"
+            "A obra apresenta um contraste de matiz",
+            "A obra não apresenta um contraste de matiz"
         ]
     }, { 
         'value': '2',
         'list': [
-            "A obra representa um contraste claro-escuro",
-            "A obra não representa um contraste claro-escuro"
+            "A obra apresenta um contraste claro-escuro",
+            "A obra não apresenta um contraste claro-escuro"
         ]
     }, { 
         'value': '3',
         'list': [
-            "A obra representa um contraste claro-escuro",
-            "A obra não representa um contraste claro-escuro"
+            "A obra apresenta o contraste quente-frio",
+            "A obra não apresenta contraste entre cores quentes e frias"
         ]
     }, { 
         'value': '4',
         'list': [
-            "A obra representa um contraste claro-escuro",
-            "A obra não representa um contraste claro-escuro"
+            "A obra apresenta um contraste simutâneo",
+            "A obra não apresenta um contraste simutâneo"
         ]
     }, { 
         'value': '5',
         'list': [
-            "A obra representa um contraste claro-escuro",
-            "A obra não representa um contraste claro-escuro"
+            "A obra apresenta um contraste de complementares",
+            "A obra não apresenta um contraste de complementares"
         ]
     }, { 
         'value': '6',
         'list': [
-            "A obra representa um contraste claro-escuro",
-            "A obra não representa um contraste claro-escuro"
+            "A obra apresenta um contraste de saturação",
+            "A obra não apresenta um contraste de saturação"
         ]
     }, { 
         'value': '7',
         'list': [
-            "A obra representa um contraste claro-escuro",
-            "A obra não representa um contraste claro-escuro"
+            "A obra apresenta um contraste de extensão",
+            "A obra não apresenta um contraste de extensão"
         ]
     }
 ]
