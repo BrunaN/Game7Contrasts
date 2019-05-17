@@ -96,13 +96,13 @@ image1.addEventListener("click", function(){
 
     if(value == "r"){
         messageResponse.innerHTML = responseText.list[0];
-        iconResponse.style.backgroundColor = "green";
+        iconResponse.style.backgroundColor = "#0f9d58";
         iconCheck.style.display = "block";
         iconError.style.display = "none";
         countRight++;
     }else{
         messageResponse.innerHTML = responseText.list[1];
-        iconResponse.style.backgroundColor = "red";
+        iconResponse.style.backgroundColor = "#db4437";
         iconCheck.style.display = "none";
         iconError.style.display = "block";
         countWrong++;
@@ -124,13 +124,13 @@ image2.addEventListener("click", function(){
 
     if(value == "r"){
         messageResponse.innerHTML = responseText.list[0];
-        iconResponse.style.backgroundColor = "green";
+        iconResponse.style.backgroundColor = "#0f9d58";
         iconCheck.style.display = "block";
         iconError.style.display = "none";
         countRight++;
     }else{
         messageResponse.innerHTML = responseText.list[1];
-        iconResponse.style.backgroundColor = "red";
+        iconResponse.style.backgroundColor = "#db4437";
         iconCheck.style.display = "none";
         iconError.style.display = "block";
         countWrong++;

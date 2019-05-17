@@ -231,11 +231,11 @@ header button:hover{
 }
 
 #right{
-    color: green;
+    color: #0f9d58;
 }
 
 #wrong{
-    color: red;
+    color: #db4437;
 }
 
 footer{
