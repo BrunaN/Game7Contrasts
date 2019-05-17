@@ -32,6 +32,34 @@ header{
     cursor: pointer;
 }
 
+.brand:hover .blue{
+    animation-name: blue;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+}
+
+.brand:hover .pink{
+    animation-name: pink;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+}
+
+@keyframes blue{
+    50%{
+        color: rgb(255, 31, 93);
+    }100%{
+        color: rgb(0, 152, 255);
+    }
+}
+
+@keyframes pink{
+    50%{
+        color: rgb(0, 152, 255);
+    }100%{
+        color: rgb(255, 31, 93);
+    }
+}
+
 .blue, .shadow, .pink{
     position: absolute;
 }
