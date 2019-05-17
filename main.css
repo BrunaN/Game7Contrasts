@@ -60,6 +60,14 @@ header{
     }
 }
 
+@keyframes pink-button{
+    50%{
+        border-color: rgb(0, 152, 255);
+    }100%{
+        border-color: rgb(255, 31, 93);
+    }
+}
+
 .blue, .shadow, .pink{
     position: absolute;
 }
@@ -132,6 +140,12 @@ button{
     border-radius: 8px;
     cursor: pointer;
     user-select: none;
+}
+
+button:hover{
+    animation-name: pink-button;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
 }
 
 .content .response .response-status{
