@@ -15,6 +15,9 @@ let iconCheck =  document.getElementsByClassName("fa-check")[0];
 let iconError =  document.getElementsByClassName("fa-times")[0];
 
 let progress = document.getElementsByClassName("number")[0];
+
+let divProgress = document.getElementsByClassName("progress")[0];
+
 let textProgress = document.getElementById("text-progress");
 
 let finish = document.getElementsByClassName("finish")[0];
@@ -172,9 +175,12 @@ next.addEventListener('click', function(){
     if(count == 7){
         spanRight.innerHTML = countRight;
         spanWrong.innerHTML = countWrong;
+
         finish.style.display = 'block';
         select.style.display='none';
         response.style.display='none';
+
+        divProgress.style.display = 'none';
     }
 
     if(width >= 14.286 && width < 105){
