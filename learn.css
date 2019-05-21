@@ -11,6 +11,17 @@
     padding-left: 50px;
 }
 
+.content div ol li{
+    padding: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content div ol li:hover{
+    color: rgb(133, 28, 255);
+}
+
+
 .content div{
     padding-bottom: 30px; 
     text-align: justify;
