@@ -30,19 +30,19 @@ let responses = [
     { 
         'value': '1',
         'list': [
-            "A obra apresenta um contraste de matiz",
+            "A obra apresenta uma combinação de cores primárias contrastantes",
             "A obra não apresenta um contraste de matiz"
         ]
     }, { 
         'value': '2',
         'list': [
-            "A obra apresenta um contraste claro-escuro",
+            "A obra apresenta um contraste de luz e escuridão",
             "A obra não apresenta um contraste claro-escuro"
         ]
     }, { 
         'value': '3',
         'list': [
-            "A obra apresenta o contraste quente-frio",
+            "A obra apresenta contraste na sensação de temperaturas",
             "A obra não apresenta contraste entre cores quentes e frias"
         ]
     }, { 
@@ -66,7 +66,7 @@ let responses = [
     }, { 
         'value': '7',
         'list': [
-            "A obra apresenta um contraste de extensão",
+            "A obra apresenta um contraste entre muito e pouco, ou grande e pequeno",
             "A obra não apresenta um contraste de extensão"
         ]
     }
