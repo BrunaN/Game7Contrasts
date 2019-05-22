@@ -8,19 +8,24 @@
     color: #ddd;
 }
 
+.content h3{
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
 .content div ol{
-    padding-left: 50px;
+    padding: 20px 100px;
     display: inline-block;
 }
 
 .content div ol li{
     color: #fff;
     cursor: pointer;
-    padding: 4px;
 }
 
 .content div ol li a{
     display: block;
+    padding: 4px;
     cursor: pointer;
     text-decoration: none;
     color: #fff;
