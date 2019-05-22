@@ -3,22 +3,35 @@
     height: auto;
     box-sizing: border-box;
     padding: 0 250px;
+    padding-bottom: 150px;
     background-color: rgb(46, 46, 46);
     color: #ddd;
 }
 
 .content div ol{
     padding-left: 50px;
+    display: inline-block;
 }
 
 .content div ol li{
-    padding: 4px;
     color: #fff;
     cursor: pointer;
+    padding: 4px;
+}
+
+.content div ol li a{
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
 }
 
 .content div ol li:hover{
-    color: rgb(133, 28, 255);
+    color: rgb(0, 152, 255);
+}
+
+.content div ol li a:hover{
+    color: rgb(0, 152, 255);
 }
 
 
