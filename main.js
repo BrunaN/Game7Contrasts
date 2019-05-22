@@ -48,19 +48,19 @@ let responses = [
     }, { 
         'value': '4',
         'list': [
-            "A obra apresenta um contraste simutâneo",
-            "A obra não apresenta um contraste simutâneo"
-        ]
-    }, { 
-        'value': '5',
-        'list': [
             "A obra apresenta um contraste de complementares",
             "A obra não apresenta um contraste de complementares"
         ]
     }, { 
+        'value': '5',
+        'list': [
+            "A obra apresenta um contraste simutâneo",
+            "A obra não apresenta um contraste simutâneo"
+        ]
+    }, { 
         'value': '6',
         'list': [
-            "A obra apresenta um contraste de saturação",
+            "A obra apresenta um contraste entre cores saturadas e diluídas",
             "A obra não apresenta um contraste de saturação"
         ]
     }, { 
