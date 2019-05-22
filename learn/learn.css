@@ -1,5 +1,7 @@
 .content {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
     height: auto;
     box-sizing: border-box;
     padding: 0 250px;
@@ -14,11 +16,17 @@
 }
 
 .content div ol{
-    padding: 20px 100px;
+    text-align: left;
+    padding: 20px 0;
+    padding-left: 100px;
     display: inline-block;
+    width: 45%;
+    box-sizing: border-box;
 }
 
 .content div ol li{
+    font-size: 20px;
+    letter-spacing: 0.1rem;
     color: #fff;
     cursor: pointer;
 }
@@ -32,11 +40,11 @@
 }
 
 .content div ol li:hover{
-    color: rgb(0, 152, 255);
+    color: rgb(133, 28, 255);
 }
 
 .content div ol li a:hover{
-    color: rgb(0, 152, 255);
+    color: rgb(133, 28, 255);
 }
 
 
@@ -48,6 +56,7 @@
 
 .content div h2{
     padding-bottom: 10px;
+    letter-spacing: 0.2rem;
     color: #fff;
     font-weight: 600;
 }

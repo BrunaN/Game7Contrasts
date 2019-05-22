@@ -29,6 +29,7 @@ button{
     border-radius: 8px;
     cursor: pointer;
     user-select: none;
+    outline: none;
 }
 
 button:hover{
@@ -208,6 +209,7 @@ header button:hover{
 
 .finish{
     font-family: 'Fixedsys Excelsior 3.01';
+    padding-top: 50px;
     display: none;
 }
 
