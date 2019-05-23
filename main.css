@@ -173,7 +173,8 @@ header button:hover{
 }
 
 .content .response .response-status img{
-    width: 450px;
+    min-width: 450px;
+    max-height: 40vh;
     border-radius: 20px;
 }
 
